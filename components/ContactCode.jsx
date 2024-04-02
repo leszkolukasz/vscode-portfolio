@@ -2,55 +2,25 @@ import styles from '../styles/ContactCode.module.css';
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'nitinranganath.me',
-    href: 'https://nitinranganath.me',
-  },
-  {
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'leszko.lucas@gmail.com',
+    href: 'mailto:leszko.lucas@gmail.com',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'leszkolukasz',
+    href: 'https://github.com/leszkolukasz',
   },
   {
     social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    link: 'leszkolukasz',
+    href: 'https://www.linkedin.com/in/leszkolukasz/',
   },
   {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    social: 'instagram',
-    link: 'iamnitinr',
-    href: 'https://www.instagram.com/iamnitinr',
-  },
-  {
-    social: 'polywork',
-    link: 'nitinranganath',
-    href: 'https://www.polywork.com/nitinranganath',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'codepen',
-    link: 'nitinranganath',
-    href: 'https://codepen.io/itsnitinr',
-  },
-  {
-    social: 'codesandbox',
-    link: 'itsnitinr',
-    href: 'https://codesandbox.io/u/itsnitinr',
-  },
+    social: "website",
+    link: "old-portfolio",
+    href: "https://leszkolukasz.github.io/portfolio/"
+  }
 ];
 
 const ContactCode = () => {

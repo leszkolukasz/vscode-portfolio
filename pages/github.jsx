@@ -3,6 +3,15 @@ import GitHubCalendar from 'react-github-calendar';
 import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
 
+const allowedRepos = [
+  "servlet-container",
+  "competitive_programming_algorithms",
+  "intercal",
+  "minimalistic_english_vocabulary_app",
+  "stl_viewer",
+  "usos_filter"
+]
+
 const GithubPage = ({ repos, user }) => {
   const theme = {
     level0: '#161B22',
@@ -71,7 +80,7 @@ export async function getStaticProps() {
   let repos = await repoRes.json();
   repos = repos
     .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 6);
+    .filter(repo => allowedRepos.includes(repo.name));
 
   return {
     props: { title: 'GitHub', repos, user },

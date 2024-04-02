@@ -41,6 +41,10 @@
   position: relative;
 }
 
+.bio > a {
+  color: inherit;
+}
+
 .bio::before,
 .bio::after {
   content: '';

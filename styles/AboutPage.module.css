@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.container > p{
+  display: inline-block;
+  margin: 20px 0;
+  line-height: 25px;
+  max-width: 1000px;
+}
+
+.container ul {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.container a {
+  color: inherit;
+}

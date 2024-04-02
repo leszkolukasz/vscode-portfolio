@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.css';
 
+const classNames = [
+  "react", "node", "mongodb", "redux", "razorpay", "material-ui", "bulma", "next", "tailwind", "react-query", "css-modules"
+]
+
 const ProjectCard = ({ project }) => {
   return (
     <div className={styles.card}>
@@ -10,7 +14,7 @@ const ProjectCard = ({ project }) => {
         <p>{project.description}</p>
         <div className={styles.tags}>
           {project.tags.map((tag) => (
-            <span key={tag} className={tag}>
+            <span key={tag} className={classNames[Math.floor(Math.random() * classNames.length)]}>
               {tag}
             </span>
           ))}
@@ -26,14 +30,14 @@ const ProjectCard = ({ project }) => {
               Source Code
             </a>
           )}
-          <a
+          {/* <a
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline}
           >
             Live Demo
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
