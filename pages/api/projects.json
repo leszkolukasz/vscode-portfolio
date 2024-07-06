@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "name": "Learning Management System (work in progress, commission)",
-    "image": "/project-imgs/lms.png",
+    "name": "Learning Management System",
+    "image": "/project-imgs/lms/thumbnail.png",
     "description": "A platform for learning high-school level mathematics. Users can select from many courses each with chapters and tasks that check understanding of the topic. Admin panel allows for easy and intuitive course/task creation and assigning users to courses.",
     "tags": [
       "react",
@@ -12,13 +12,33 @@
       "django",
       "django-ninja",
       "docker"
-    ]
+    ],
+    "gallery_path": "/project-imgs/lms"
   },
   {
-    "id": 1,
-    "name": "work in progress",
-    "image": "https://imgur.com/kbGs6zH.png",
-    "description": "For more projects please visit my github profile and see pinned projects",
-    "tags": []
+    "id": 2,
+    "name": "Gitoptim",
+    "image": "/project-imgs/gitoptim/thumbnail.png",
+    "description": "Developed as part of my Bachelor's thesis in Computer Science in a group of 4 people. Web application that utilizes Large Language Models to analyze code in git repositories. It reports bugs, offers code improvement suggestions, and automates the generation of unit and Memlab tests.",
+    "tags": [
+      "react",
+      "next-js",
+      "fastapi",
+      "huggingface",
+      "pytorch",
+      "llama.cpp",
+      "chroma-db",
+      "typer",
+      "docker"
+    ],
+    "gallery_path": "/project-imgs/gitoptim"
+  },
+  {
+    "id": 3,
+    "name": "Kava - programming language",
+    "image": "/project-imgs/kava/thumbnail.webp",
+    "description": "Kava is a programming language inspired by Kotlin with elements borrowed from Java and JavaScript. It is statically typed, interpreted, and supports functions as first-class citizens. It is designed to be simple and easy to learn, with a syntax that is similar to other popular languages.",
+    "tags": ["haskell", "bnf-converter"],
+    "source_code": "https://github.com/leszkolukasz/kava-programming-language"
   }
 ]

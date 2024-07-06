@@ -6,10 +6,10 @@ export default function HomePage() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.background}>
+        {/* <div className={styles.background}>
           <h1>WEBSITE</h1>
           <h1>IN DEVELOPMENT</h1>
-        </div>
+        </div> */}
         <div className={styles.foreground}>
           <div className={styles.content}>
             <h1 className={styles.name}>Łukasz Leszko</h1>

@@ -1,14 +1,21 @@
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.css';
+import { useState } from 'react';
+import GalleryModal from './GalleryModal';
 
 const classNames = [
-  "react", "node", "mongodb", "redux", "razorpay", "material-ui", "bulma", "next", "tailwind", "react-query", "css-modules"
+  "react", "node", "orange", "redux", "bulma", "next", "react-query", "brown", "pink", "yellow"
 ]
 
 const ProjectCard = ({ project }) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
   return (
+    <>
     <div className={styles.card}>
-      <Image src={project.image} height={300} width={600} alt={project.name} />
+      <div className={styles.image}>
+        <Image src={project.image} layout='fill' objectFit='contain' alt={project.name} />
+      </div>
       <div className={styles.content}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
@@ -30,17 +37,27 @@ const ProjectCard = ({ project }) => {
               Source Code
             </a>
           )}
-          {/* <a
+          {project.demo && <a
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.underline}
           >
             Live Demo
-          </a> */}
+          </a>}
+          {project.gallery_path && (
+            <a
+              className={styles.underline}
+              onClick={() => setIsOpen(true)}
+            >
+              Gallery
+            </a>
+          )}
         </div>
       </div>
     </div>
+    {modalIsOpen && <GalleryModal gallery={project.gallery} onClose={() => setIsOpen(false)} />}
+    </>
   );
 };
 
