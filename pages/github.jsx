@@ -9,7 +9,8 @@ const allowedRepos = [
   "intercal",
   "minimalistic_english_vocabulary_app",
   "stl_viewer",
-  "usos_filter"
+  "usos_filter",
+  "kava-programming-language",
 ]
 
 const GithubPage = ({ repos, user }) => {
