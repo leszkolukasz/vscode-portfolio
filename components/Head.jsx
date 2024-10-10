@@ -6,7 +6,7 @@ const CustomHead = ({ title }) => {
       <title>{title}</title>
       <meta
         name="description"
-        content="Łukasz Leszko is an avid full stack web developer building websites and applications you'd love to use"
+        content="Machine Learning and Mathematics student at MIMUW | Junior Software Engineer at RadCode"
       />
       <meta
         name="keywords"
