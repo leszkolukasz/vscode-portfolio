@@ -4,6 +4,9 @@ const CustomHead = ({ title }) => {
   return (
     <Head>
       <title>{title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Łukasz Leszko" />
+      <meta name="copyright" content="Łukasz Leszko" />
       <meta
         name="description"
         content="Machine Learning and Mathematics student at MIMUW | Junior Software Engineer at RadCode"
@@ -12,6 +15,7 @@ const CustomHead = ({ title }) => {
         name="keywords"
         content="Łukasz Leszko, Łukasz Leszko developer, Łukasz Leszko portfolio, vscode-portfolio"
       />
+      
       <meta property="og:title" content="Łukasz Leszko's Portfolio" />
       <meta
         property="og:description"
